@@ -147,11 +147,12 @@ header {
     z-index: 99;
 }
 body{
-    background-image: url(../imagen/ilnur-kalimullin-BZh-WSt9doE-unsplash.jpg);
+    background-image: url(../imagen/jennifer-latuperisa-andresen-fDnVM_S-Vro-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-y: -1000px
    
 }
 
@@ -189,9 +190,9 @@ h4 {
 }
 .txt-grande {
     font-family: "norse";
-    color: #0e59a6;
+    color: #213d58;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2.2vw;
 }
 
 .desc-titulo {
@@ -200,7 +201,7 @@ h4 {
 }
 
 .num {
-    font-family: "norse";
+    font-family: "roboto";
     font-size: 2vw;
 }
 
@@ -218,16 +219,26 @@ h4 {
 
 .titulo1 {
     text-align: center;
-    margin: 2em;
+    margin: 1em 2em 1em 2em;
+    font-family: "norse";
+    font-size: 70px;
+    text-shadow: 5px 5px 15px rgb(31, 31, 49);
+    font-weight: 600;
 }
 
 
 .texto {
+    padding: 20px;
     margin: 2em;
+    font-family: "roboto";
+    color: rgb(255, 255, 255);
+    background: rgba(58, 50, 83, 0.472);
 }
 
 /* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */
 .redes {
+    box-shadow: 5px 5px 15px black;
+    background: #fff;
     grid-column: 4/5;
     grid-row: 1/2;
 }
@@ -235,9 +246,11 @@ h4 {
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 .titulo2 {
     text-align: center;
+    font-family: "norse"
 }
 
 .subtitulo {
+    font-family: "norse";
     text-align: center;
     margin-bottom: 2em;
 }

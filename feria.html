@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_feria.css">
+    <link rel="icon" type="image/png" href="imgf/logo1.png">
+    <title>Juegos de Feria</title>
+</head>
+
+<body>
+<div class="contenedor">
+    <header #header>
+        <nav id="nav">
+            <a href="index.html"> <img class="logo" src="./imgf/logo1.png" alt="Logo"> </a>
+            <ul>
+                <li class="dropdown"><a href="comida.html" class="dropbtn">PLAZOLETA DE COMIDAS </a></li>
+                <li class="dropdown"><a href="#paquetes" class="dropbtn">PAQUETES</a></li>
+                <li class="dropdown"><a href="feria.html" class="dropbtn">JUEGOS DE FERIA</a></li>
+                <li class="dropdown"><a href="#" class="dropbtn">ATRACCIONES</a>
+                    <div class="dropdown-content">
+                        <a class="A" href="ascenso.html">Ascenso al Valhalla</a>
+                        <a class="B" href="casaterror.html">El secreto de Helheim</a>
+                        <a class="C" href="casa de los espejos.html">Casa de los espejos de Loki</a>
+                        <a class="D" href="bifrost.html">El bifrost</a>
+                        <a class="E" href="valkirias.hrml">Batalla de las Valkirias</a>
+                        <a class="F" href="ragnarok.html">El Ragnarok</a>
+                        <a class="G" href="drakkar.html">Drakkar</a>
+                        <a class="H" href="martillo.html">Martillo de Thor</a>
+                        <a class="I" href="casaterror.html">Descenso del Helheim</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="tienda.html" class="dropbtn">MIDGARD</a></li>
+                <li class="dropdown"><a href="formulario.html" class="dropbtn">LOGIN</a></li>
+            </ul>
+        </nav>
+        <div class="slider" id="slider">
+            <ul>
+                <li><img id="img" src="imgf/archery.jpg"></li>
+                <li><img id="img1" src="imgf/cuchillos.jpg" ></li>
+                <li><img id="img2" src="imgf/pesca3.jpg"></li>
+                <li><img id="img3" src="imgf/futbolito2.jpg"></li>
+            </ul>
+        </div>
+    </header>
+
+    <a href="#nav" id="fixedbutton"><img src="imagen/button.png"></a>
+    <script src="js/boton-feria.js"></script>
+
+    <div class="contenido">
+
+        <!-- <div class="portico"><img src="img/portico.png" alt=""></div>
+        <!-- <div class="animation">
+            
+            <div class="feria"><img src="img/ani_feria.jpg" alt=""></div>
+        </div> --> -->
+        
+        <div class="juegos" id="tiro">
+            <img class="imgcont1" id="imgarq" src="imgf/arqueria2.jpg">
+            <div class="descripcion" id="desarq">
+                <h1>Tiro Al Blanco</h1><br> <br>
+                <p>A partir de los 10 años, bajo supervisión de un adulto</p> <br><br>
+                <p>Juego de puntería en el que tendrás que atinarle al blanco para reunirte en el Valhalla junto a los Dioses</p>
+            </div>   
+        </div>
+
+        <div class="juegos" id="pesca">
+            <img class="imgcont2" id="imgpes" src="imgf/pesca3.jpg">
+            <div class="descripcion" id="despes">
+                    <h1>Pesca Deportiva</h1> <br> <br>
+                    <p>A partir de los 8 años, bajo supervisión de un adulto</p> <br> <br>
+                    <p>Contamos con un amplio lago para que pongas a prueba la ancestral hábilidad nórdica de la pesca</p>
+            </div>   
+        </div>
+
+        <div class="juegos" id="dardos">
+                <img class="imgcont1" id="imgdar" src="imgf/dardos2.jpg">
+                <div class="descripcion" id="desdar">
+                    <h1>Dardos</h1><br><br>
+                    <p>A partir de los 7 años, bajo supervisión de un adulto</p><br><br>
+                    <p>Apúntale a reunirte junto a los Dioses, obteniendo la vitoria en este juego de puntería</p>
+                </div>   
+            </div>
+
+        <div class="juegos" id="futbolito">
+            <img class="imgcont2" id="imgfut" src="imgf/futbolito2.jpg">
+            <div class="descripcion" id="desfut">
+                <h1>Futbolito</h1><br><br>
+                <p>Apto para todo público</p><br><br>
+                <p>Disfruta en familia de este divertido juego de mesa en el que podrás retar a un oponente como en una auténtica batalla vikinga</p>
+            </div>   
+        </div>
+
+        <div class="juegos" id="fuerza">
+            <img class="imgcont1" id="imgfuerza" src="imgf/fuerza.jpg">
+            <div class="descripcion" id="desfuerza">
+                <h1>Mide Tu Fuerza</h1><br><br>
+                <p>Apto para todo público</p><br><br>
+                <p>En este juego tendrás la posibilidad de medir tu fuerza y demostrar que eres digno del favor de los Dioses</p>
+            </div>   
+        </div>
+
+        <div class="juegos" id="aros">
+                <img class="imgcont2" id="imgaros" src="imgf/aros.jpg">
+                <div class="descripcion" id="desaros">
+                    <h1>Aros</h1><br><br>
+                    <p>Apto para todo público</p><br><br>
+                    <p>Encaja los aros en su lugar para lograr la gloria y ser elevado por las Valkirias</p>
+                </div>   
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-menu">
+                <div class="footer-columna">
+                    <h3>MAS INFORMACION</h3>
+                    <ul>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Acerca de nosotros</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Terminos y condiciones</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Reglamento general</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Nuestros Aliados</li>
+                        </a>
+                        <a class="normal" target="_blank" href="#">
+                            <li>Reglamento general</li>
+                        </a>
+                    </ul>
+    
+                </div>
+    
+                <div class="footer-columna">
+                    <h3>Links de interes</h3>
+                    <ul>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Cotiza tu evento con nosotros</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Politicas del parque</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Trabaja con nosotros</li>
+                        </a>
+                    </ul>
+                </div>
+    
+                <div class="footer-columna">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Contáctanos: contacto@mundovalhalla.com</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Llamanos al PBX 1-0844300</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Servicio al cliente</li>
+                        </a>
+                        <a class="normal" href="#" target="_blank">
+                            <li>Tips del parque</li>
+                        </a>
+                        <a class="normal" target="_blank" href="#">
+                            <li>Horarios</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy-redes">
+            <div class="footer-main">
+                <div class="footer-redes">
+                    <a target="_blank" href="https://es-la.facebook.com/"> <img class="icon-redes" src="imagen/facebookj.png"></a>
+                    <a target="_blank" href="https://twitter.com/?lang=es"><img class="icon-redes" src="imagen/instagramj.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/?hl=es-la"><img class="icon-redes" src="imagen/twitterj.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/?hl=es-la"><img class="icon-redes" src="imagen/youtubej.jpg"></a>
+                </div>
+                <div class="footer-celular">
+                    <a href="#"><img src="imagen/android.png" alt=""></a>
+                    <a href="#"><img src="imagen/ios.png" alt=""></a>
+                </div>
+                <div class="footer-masters">
+                    Made with<span style="color: #e25555; margin: 0 5px;">&hearts;</span>by
+                    <a href="#"><img src="imagen/codemastersj.png" height="50"></a>
+                    <img src="imagen/hachasj.png" height="50">
+                </div>
+            </div>
+            <p class="creditos"> &copy; 2019 Mundo Valhalla</p>
+        </div>
+    </footer>
+</div>
+  
+</body>
+</html>

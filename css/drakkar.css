@@ -1,0 +1,723 @@
+/*---------------------------------------------------------- Variables globales ----------------------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+hr {
+    color: transparent;
+    border-top: 1px dashed #000;
+    width: 90%;
+    margin: auto;
+}
+body{
+    background-image: url(../imagen/fondon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+
+
+/* -------------------------------------------------------------- Fuentes ---------------------------------------------------------------- */
+
+@font-face {
+    font-family: "roboto";
+    src: url(../type/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "norse";
+    src: url(../type/Norse-Bold.otf);
+}
+
+/*------------------------------------------------------------ Media Queries ------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------- Barra de Navegacion ---------------------------------------------------------*/
+
+/* logo */
+.logo {
+    width: 12rem;
+    z-index: 4;
+    position: relative;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    margin-right: 4%;
+    z-index: 4;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    z-index: 4;
+}
+
+.dropbtn,
+.login a {
+    font-weight: 600;
+    text-shadow: 5px 5px 5px black;
+}
+
+nav ul li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-family: "roboto";
+    z-index: 4;
+    /*     margin-top: 25px; */
+    font-size: 15px;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(165, 165, 165, 0.808);
+    border-radius: 10px;
+}
+
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f973;
+    min-width: 260px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* -------------------------------------------------------------- Imagen ---------------------------------------------------------------- */
+header {
+    background-color: #cccccc;
+    height: 770px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------------------------------------------------------- Contenido principal --------------------------------------------------------- */
+#fixedbutton {
+    display: none;
+    position: fixed;
+    top: 550px;
+    right: 0px;
+    z-index: 99;
+}
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+}
+
+/* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
+.descripcion {
+    padding: 20px;
+    border-radius: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: absolute;
+    top: 650px;
+    background-color: #ffffff;
+    /* border: solid black; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.473);
+ }
+
+.descripcion div ul li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.txt-grande {
+    color: #0e59a6;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: "norse"
+ }
+ .desc-titulo {
+    font-size: 1.5vw;
+    font-family: "norse";
+ }
+ .num {
+    font-size: 1rem;
+    font-family: "roboto"
+ }
+ .normal1 {
+    text-decoration: none;
+    font-family: "roboto";
+ }
+
+/* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
+
+.info {
+    padding: 1em;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.titulo1 {
+    text-align: center;
+    margin: 1em 2em 1em 2em;
+}
+
+
+.texto {
+    margin: 2em;
+    font-family: roboto;
+    background: rgba(0, 0, 0, 0.466);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */
+.redes {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+/* ---------------------------------------------------- Paquetes  ------------------------------------------------------ */
+.containers {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tabla {
+    widows: 350px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.titulo {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    background-size: cover;
+    padding: 15px 0;
+}
+
+.titulo .fa {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.titulo h2 {
+    color: #fff;
+    font-family: "norse";
+    font-size: 32px;
+
+}
+
+.precio {
+    padding: 10px 0;
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    background-size: cover;
+}
+
+.img-paquete {
+    /* transform: none; */
+    /* background-size: cover; */
+    height: 180px;
+    width: 100%;
+}
+
+.precio h3 {
+    font-family: "norse";
+    font-size: 30px;
+    color: #fff;
+}
+
+.precio h3 span {
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+
+.enlace a {
+    font-family: "norse";
+    display: inline-block;
+    text-decoration: none;
+    background: #000;
+    background-size: cover;
+    color: #fff;
+    margin: 40px 0;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: 21px;
+    transition: .3s;
+}
+
+.enlace a:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    background-color: #fff;
+    color: #000;
+}
+
+.enlace {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .tabla {
+        text-align: center;
+        width: 225px;
+    }
+
+    .titulo h2 {
+        font-size: 18px;
+    }
+
+    .precio {
+        padding: 4px 0;
+    }
+
+    .precio h3 {
+        font-size: 20px;
+    }
+
+    .enlace a {
+        margin: 20px 0;
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .enlace a:hover {
+        transform: scale(1.05);
+    }
+
+    .enlace a:hover {
+        transform: scale(1.05);
+    }
+
+    .tabla:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .tabla {
+        text-align: center;
+        width: 300px;
+    }
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "norse";
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    color: black;
+}
+
+.flip-card-back {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "roboto";
+    padding: 10px 0;
+}
+
+/* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
+.titulo2 {
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: roboto;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 11.11%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.subtitulo2 {
+    margin: 3em;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
+
+footer {
+    width: 100%
+}
+
+.footer-container {
+    width: 100%;
+    background-image: url(https://imgix.culturacolectiva.com/content/2016/07/mitologia-nordica-guia.jpg?auto=compress&q=40&lossless=1&w=1600&h=645&fit=crop&crop=focalpoint);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff
+}
+
+.footer-menu {
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-menu .footer-columna {
+    width: calc(100% / 3);
+    text-align: justify;
+
+
+}
+
+.footer-menu .footer-columna:nth-child(2) {
+    padding: 0 20px;
+
+
+}
+
+.footer-menu .footer-columna h3 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-menu .footer-columna span p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 15px;
+
+}
+
+.footer-copy-redes {
+    width: 100%;
+    background: #000;
+    border-top: 3px solid #fff;
+}
+
+.main-copy-redes {
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+    width: 70%;
+    color: #fff
+}
+
+.main-copy-redes .footer-redes {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.main-copy-redes .footer-redes a img {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40;
+    border-radius: 50%;
+    background: #fff;
+    color: #fff;
+    text-align: center
+}
+
+@media screen and (max-width: 750px) {
+    .info-main {
+        padding: 30px 100px;
+    }
+
+    .footer-menu .footer-columna {
+        padding: 0 10px;
+
+    }
+
+    .footer-menu .footer-columna h3 {
+        font-size: 28px;
+    }
+
+    .footer-menu .footer-columna p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .info-main {
+        padding: 30px 30px;
+    }
+
+    .info-main h3 {
+        font-size: 30px;
+    }
+
+    .footer-menu {
+        padding: 10px 0;
+    }
+
+    .footer-menu .footer-columna {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-menu .footer-columna h3 {
+        margin-bottom: 5px;
+
+    }
+
+    .footer-menu .footer-columna span {
+        display: block;
+    }
+
+    .main-copy-redes .footer-copy {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-copy-redes .footer-redes {
+        width: 100%;
+    }
+
+
+}
+
+.putos:hover {
+
+    transform: scale(1.2);
+    transition: 230ms;
+}
+
+.normal {
+    font-family: roboto;
+    color: white;
+
+}
+
+.normal {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+li:hover {
+
+    color: rgb(248, 211, 2);
+}
+
+
+h3 {
+    font-family: norse;
+}
+.barco1 {
+    position: absolute;
+    left: 1050px;
+    animation: movimiento 10s infinite;
+    position: fixed;
+    padding-bottom: 100px;
+}
+
+.nube > img {
+    /*   z-index: ; */
+      top: 20%;
+      left: 30%;
+      position: absolute;
+      width: 700px;
+      height: 400px;
+      z-index: 5;
+      opacity: 0.7;
+      position: fixed;
+}
+@keyframes movimiento {
+    0% { opacity: 0; left: 650px; top: 10px;}
+    40% {opacity: 1;}
+    100% {left: -1000px; top: 500px};
+}

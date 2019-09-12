@@ -4,69 +4,83 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 body {
     overflow-x: hidden;
 }
+
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 90em 1fr 30em 10em;
     grid-template-areas: "header"
-                         "arbol"
-                         "tablas1"
-                         "slider"
-                         "footer"
+        "arbol"
+        "tablas1"
+        "slider"
+        "footer"
 }
+
 .contenedor .header {
     grid-area: header;
     background-image: url(../imagen/FONDO-GALAXIA.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* -------------------cierre grids--------------------------------- */
 @font-face {
     font-family: "roboto";
     src: url(../type/Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: "norse";
     src: url(../type/Norse-Bold.otf);
 }
+
 /*-------------------------- Responsive *------------------------------*/
 @media screen and (max-width: 750px) {
     body {
         margin: auto;
     }
 }
+
 @media only screen and (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
     }
+
     nav ul {
         width: 100%;
         justify-content: space-evenly;
     }
+
     .contenedor2 {
         flex-direction: column;
     }
+
     .slider {
         width: 100%;
     }
+
     .articulo {
         width: 100%;
     }
+
     .montana2 {
         top: 37%
     }
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
-  
+
     .montana1 {
         top: 37%
     }
-    
-  }
+
+}
+
 /* logo */
 .logo {
     width: 12rem;
@@ -74,9 +88,11 @@ body {
     position: relative;
     transition: 0.2s;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
+
 /* ---------------------------Nav---------------------------------- */
 nav {
     display: flex;
@@ -86,6 +102,7 @@ nav {
     margin-right: 4%;
     z-index: 4;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -94,10 +111,13 @@ nav ul {
     display: flex;
     z-index: 4;
 }
-.dropbtn, .login a{
+
+.dropbtn,
+.login a {
     font-weight: 600;
     text-shadow: 5px 5px 5px black;
 }
+
 nav ul li a,
 .dropbtn {
     display: inline-block;
@@ -107,16 +127,19 @@ nav ul li a,
     text-decoration: none;
     font-family: "roboto";
     z-index: 4;
-/*     margin-top: 25px; */
+    /*     margin-top: 25px; */
     font-size: 15px;
 }
+
 .dropdown:hover .dropbtn {
     background-color: rgba(165, 165, 165, 0.808);
     border-radius: 10px;
 }
+
 nav ul li.dropdown {
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -128,6 +151,7 @@ nav ul li.dropdown {
     z-index: 1;
     border-radius: 20px;
 }
+
 .dropdown-content a {
     color: black;
     padding: 14px 16px;
@@ -139,17 +163,21 @@ nav ul li.dropdown {
     padding: 15px;
     border-radius: 20px;
 }
+
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /* Arbol */
-.arbol > img {
+.arbol>img {
     width: 100%;
     height: auto;
 }
+
 /* headerC */
 .montana1 {
     position: relative;
@@ -157,6 +185,7 @@ nav ul li.dropdown {
     top: 0%;
     z-index: 0;
 }
+
 .montana2 {
     position: absolute;
     width: 100%;
@@ -164,6 +193,7 @@ nav ul li.dropdown {
     right: 0;
     z-index: 1;
 }
+
 .nubes {
     position: absolute;
     width: 100%;
@@ -171,6 +201,7 @@ nav ul li.dropdown {
     animation: nubes 250s infinite;
     z-index: 1;
 }
+
 .nubes2 {
     position: absolute;
     width: 100%;
@@ -178,26 +209,41 @@ nav ul li.dropdown {
     animation: nubes2 250s infinite;
     z-index: 3;
 }
+
 .railes1 {
     position: absolute;
     width: 100%;
     top: 20%;
     z-index: 0;
 }
+
 .railes2 {
     position: absolute;
     width: 100%;
     top: 10%;
     z-index: 3;
 }
+
 @keyframes nubes {
-    from{left: 0;}
-    to{left: 100%;}
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
 }
+
 @keyframes nubes2 {
-    from{right: 0;}
-    to{right: 100%;}
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
 }
+
 .fire {
     z-index: 4;
     position: absolute;
@@ -205,6 +251,7 @@ nav ul li.dropdown {
     left: 0;
     width: 100%;
 }
+
 .efecto {
     position: absolute;
     top: 0;
@@ -214,6 +261,7 @@ nav ul li.dropdown {
     opacity: 0.1;
     height: 1000px;
 }
+
 .titulo1 {
     box-shadow: #000;
     position: absolute;
@@ -225,6 +273,7 @@ nav ul li.dropdown {
     text-shadow: 5px 15px 25px black;
     z-index: 5;
 }
+
 .titulo2 {
     box-shadow: 10px 10px 30px #000;
     position: absolute;
@@ -238,6 +287,7 @@ nav ul li.dropdown {
     text-shadow: 1px 1px 8px black;
     z-index: 5;
 }
+
 /* ------------------------Seccion Arbol------------------------------ */
 .contenedor .arbol {
     background-image: url(../imagen/arbol.png);
@@ -245,6 +295,7 @@ nav ul li.dropdown {
     background-attachment: fixed;
     background-size: cover;
 }
+
 .asgard {
     position: absolute;
     top: 230%;
@@ -252,6 +303,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .helheim {
     position: absolute;
     top: 280%;
@@ -259,6 +311,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .muspelheim {
     position: absolute;
     top: 240%;
@@ -266,6 +319,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .alfheim {
     position: absolute;
     top: 240%;
@@ -273,6 +327,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .nidavellir {
     position: absolute;
     top: 280%;
@@ -280,6 +335,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .vaneheim {
     position: absolute;
     top: 290%;
@@ -287,6 +343,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .niflheim {
     position: absolute;
     top: 290%;
@@ -294,6 +351,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .jotunheim {
     position: absolute;
     top: 260%;
@@ -301,6 +359,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .midgard {
     position: absolute;
     top: 260%;
@@ -308,6 +367,7 @@ nav ul li.dropdown {
     width: 140px;
     transition: 120ms;
 }
+
 .reinos {
     position: absolute;
     top: 260%;
@@ -316,9 +376,11 @@ nav ul li.dropdown {
     transition: 420ms;
     filter: invert(1.5)
 }
-.arbol .arbolC .mundos img:hover {
+
+.mundocrece:hover {
     transform: scale(1.7)
 }
+
 h5 {
     position: absolute;
     font-family: "norse";
@@ -336,6 +398,7 @@ h5 {
     background-attachment: fixed;
     background-size: cover;
 }
+
 .containers {
     width: 100%;
     max-width: 1150px;
@@ -344,7 +407,7 @@ h5 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+
 
 }
 
@@ -354,16 +417,16 @@ h5 {
     color: #fff;
     text-align: center;
     cursor: pointer;
-/*     overflow: hidden; */
+    /*     overflow: hidden; */
     margin-bottom: 15px;
-    
+
 }
 
 .titulo {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     background-size: cover;
     padding: 15px 0;
-    
+
 }
 
 .titulo .fa {
@@ -491,12 +554,12 @@ h5 {
     transition: transform 1s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    
+
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    
+
 }
 
 .flip-card-front,
@@ -510,7 +573,7 @@ h5 {
 .flip-card-front {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     color: black;
-    
+
 }
 
 .flip-card-back {
@@ -520,61 +583,77 @@ h5 {
     font-family: "roboto";
     padding: 10px 0;
 }
+
 /*--------------------------- Slider--------------------------------- */
 .slider {
     width: 100%;
     overflow: hidden;
 }
+
 .slider ul {
     display: flex;
     padding: 0;
     width: 400%;
     animation: cambio 12000ms infinite alternate linear;
 }
+
 .slider li {
     width: 100%;
     list-style: none;
 }
+
 .slider img {
     width: 100%;
 }
+
 @keyframes cambio {
     0% {
         margin-left: 0;
     }
+
     20% {
         margin-left: 0;
     }
+
     25% {
         margin-left: -100%;
     }
+
     45% {
         margin-left: -100%;
     }
+
     50% {
         margin-left: -200%;
     }
+
     70% {
         margin-left: -200%;
     }
+
     75% {
         margin-left: -300%;
     }
+
     100% {
         margin-left: -300%;
     }
 }
+
 .contenedor .slider {
     height: 550px;
     background: #000;
 }
+
 /*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
 footer {
     width: 100%;
 }
+
 .footer {
     grid-area: footer;
 }
+
 .footer-container {
     width: 100%;
     background-image: url(https://imgix.culturacolectiva.com/content/2016/07/mitologia-nordica-guia.jpg?auto=compress&q=40&lossless=1&w=1600&h=645&fit=crop&crop=focalpoint);
@@ -582,6 +661,7 @@ footer {
     background-size: cover;
     color: #fff
 }
+
 .footer-menu {
     width: 100%;
     max-width: 1000px;
@@ -590,28 +670,34 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer-menu .footer-columna {
     width: calc(100% / 3);
     text-align: justify;
 }
+
 .footer-menu .footer-columna:nth-child(2) {
     padding: 0 20px;
 }
+
 .footer-menu .footer-columna h3 {
     font-size: 32px;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
+
 .footer-menu .footer-columna span p {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 15px;
 }
+
 .footer-copy-redes {
     width: 100%;
     background: #000;
     border-top: 3px solid #fff;
 }
+
 .footer-main {
     width: 100%;
     padding: 15px;
@@ -619,6 +705,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .footer-masters {
     width: 33%;
     color: #ffffff;
@@ -626,11 +713,13 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 .footer-redes {
     width: 33%;
     display: flex;
     justify-content: space-evenly;
 }
+
 .footer-redes a img {
     display: inline-block;
     text-decoration: none;
@@ -642,32 +731,40 @@ footer {
     color: #fff;
     text-align: center
 }
+
 .footer-celular {
     width: 37%;
     display: flex;
     justify-content: space-between;
 }
+
 .creditos {
     color: #ffffff;
     text-align: center;
 }
+
 .icon-redes:hover {
     transform: scale(1.2);
     transition: 230ms;
 }
+
 .normal {
     font-family: roboto;
     color: white;
 }
+
 .normal {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 li:hover {
     color: rgb(248, 211, 2);
 }
+
 h3 {
     font-family: norse;
 }
@@ -678,4 +775,14 @@ h3 {
     top: 550px;
     right: 0px;
     z-index: 99;
+}
+
+#text {
+    z-index: 98;
+    position: absolute;
+    top: 280%;
+    left: 48%;
+    font-family: norse;
+    color: white;
+    font-size: larger;
 }

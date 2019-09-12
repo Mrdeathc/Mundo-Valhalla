@@ -130,7 +130,7 @@ nav ul li.dropdown {
 
 /* -------------------------------------------------------------- Imagen ---------------------------------------------------------------- */
 header {
-    background-image: url(../imagen/asgard2.jpg);
+    background-image: url(../imagen/BICtia.jpg);
     height: 770px;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ header {
     z-index: 99;
 }
 body{
-    background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2014/03/290530-posible-regreso-saga-rollercoaster-tycoon.jpg);
+    background-image: url(../imagen/ilnur-kalimullin-BZh-WSt9doE-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,14 +168,15 @@ body{
 
 /* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
 .descripcion {
+    border-radius: 20px;
+    padding: 20px;
     grid-column: 1/2;
     grid-row: 1/2;
     position: absolute;
     top: 720px;
-    background: #fff;
+    background-color: #ffffff;
     /* border: solid black; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.473);
-    
 }
 
 .descripcion div ul li {
@@ -183,17 +184,23 @@ body{
     margin: 10px;
 }
 
+h4 {
+    font-family: "norse";
+}
 .txt-grande {
+    font-family: "norse";
     color: #0e59a6;
     text-align: center;
     font-size: 1.5vw;
 }
 
 .desc-titulo {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    font-family: "roboto";
 }
 
 .num {
+    font-family: "norse";
     font-size: 2vw;
 }
 

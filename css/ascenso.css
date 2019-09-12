@@ -9,9 +9,10 @@
     scroll-behavior: smooth;
 }
 body {
-    background: url(../imagen/filip-zrnzevic-PSFfI7vbS3c-unsplash.jpg);
+    background: url(../imagen/hanson-lu-N8BOOpQN4fs-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position-y: -100px;
 }
 hr {
     color: transparent;

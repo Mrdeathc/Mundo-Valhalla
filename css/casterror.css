@@ -11,9 +11,11 @@ html {
     overflow-y: visible;
 }
 body {
-  background-image: url("../imagen/Da23.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../imagen/ian-espinosa-eYeOl9W8uuE-unsplash.jpg");
+/*   background-repeat: no-repeat; */
   background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -400px;
 
 
 }
@@ -675,4 +677,15 @@ h3 {
     transform: rotateY(180deg);
     font-family: "roboto";
     padding: 10px 0;
+}
+.rayo {
+/*     filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));  */
+    font-size: 500px;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    filter: brightness(2.9);
+    filter: blur(15px);
+    box-shadow: 0 0 20px rgb(144, 226, 247);
+    transform: scale(500px)
 }

@@ -685,7 +685,7 @@ li:hover {
 .barco1 {
     position: absolute;
     left: 1050px;
-    animation: movimiento 10s infinite;
+    animation: movimiento 20s infinite;
     position: fixed;
     padding-bottom: 100px;
 }
@@ -716,4 +716,12 @@ li:hover {
         top: 500px
     }
     ;
+}
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
 }

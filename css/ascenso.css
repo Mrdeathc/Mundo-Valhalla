@@ -537,10 +537,6 @@ header {
     opacity: 1;
 }
 
-.column>img {
-    height: 60px;
-}
-
 .subtitulo2 {
     text-align: center;
 }
@@ -684,4 +680,12 @@ li:hover {
     to {
         opacity: 0;
     }
+}
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
 }

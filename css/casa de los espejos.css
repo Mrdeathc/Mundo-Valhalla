@@ -757,3 +757,11 @@ li:hover {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
+}

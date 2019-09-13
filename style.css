@@ -1,42 +1,79 @@
-@font-face {
-    font-family: "roboto";
-    src: url(./type/Roboto-Light.ttf);
-}
-@font-face{
-    font-family: "norse";
-    src: url(norse-Bold.otf)
-
-}
-
-body{
-    background-image: url(imagen/john-westrock-9V-hT3P_7KI-unsplash.jpg);
-    background-repeat: repeat
-    background-size: cover;
-    /* opacity: 0.9; */
-    
-}
-
+/* ------------------------------------------------------------- Variables Globales ------------------------------------------------------------- */
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+h1 {
+    text-align: center;
+    font-family: norse;
+    font-size: 400%;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+}
+
+/* ------------------------------------------------------------- Fuentes ------------------------------------------------------------- */
+@font-face {
+    font-family: "roboto";
+    src: url(type/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "norse";
+    src: url(type/norse-Bold.otf)
+}
+
+/* ------------------------------------------------------------- Animaciones ------------------------------------------------------------- */
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%
+    }
+
+    45% {
+        margin-left: -100%
+    }
+
+    50% {
+        margin-left: -200%
+    }
+
+    70% {
+        margin-left: -200%
+    }
+
+    75% {
+        margin-left: -300%
+    }
+
+    100% {
+        margin-left: -300%
+    }
+}
+
+/* ------------------------------------------------------------- Header ------------------------------------------------------------- */
+
+/* -------------------------------------------------- Slider -------------------------------------------------- */
 .slider {
-    top: 0px;
-    position: absolute;
-    grid-area: slider;
     scroll-behavior: smooth;
     overflow: hidden;
-/*     opacity:0.8; */
     width: 100%;
-    height: 85%; 
-    z-index: 3;
+    height: 100%;
 }
 
 .slider ul {
     display: flex;
-    padding: 0;
     width: 400%;
-    animation: slide 20s infinite alternate;   
+    animation: slide 20s infinite alternate;
     animation-timing-function: linear;
 }
 
@@ -48,164 +85,20 @@ body{
 
 .slider img {
     border: 10px;
-
     width: 100%;
     height: 90%;
     object-fit: cover;
     object-position: center center;
-    grid-area: slide;
     overflow: hidden;
     z-index: 3;
 }
 
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%}
-    45% {margin-left: -100%}
-
-    50% {margin-left: -200%}
-    70% {margin-left: -200%}
-
-    75% {margin-left: -300%}
-    100% {margin-left: -300%}
-}
 .banner_dua {
     position: relative;
 }
-h1 {
-    text-align: center;
-    font-family: norse;
-    font-size: 400%;
-    color:white;
-    text-shadow: 5px 5px 15px black;
-}
 
-.desayuno {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, auto);
-    width: 70%;
-    grid-column-gap: 45px;
-    grid-row-gap: 30px;
-    padding: 50px;
-    margin: auto;
-}
-.text {
-    font-family: "norse";
-    font-size: 20px;
-}
-.desayuno img {
-    width:100%;
-    min-width: 50%;
-    max-width: 100%;
-    height: 14rem;
-    border-radius: 10px;
-}
+/* -------------------------------------------------- Menu de navegacion -------------------------------------------------- */
 
- .desayuno img {
-    width:100%;
-    min-width: 50%;
-    max-width: 100%;
-    height: 14rem;
-    border-radius: 20px;
- }
- .container3 {
-    position: relative;
-    width: 100%;
-  }
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(12, 69, 87, 0.637);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-    border-radius: 20px;
-  }
-  .container3:hover .overlay {
-    width: 100%;
-  }
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-  }
-
-
-
-
-.Almuerzo {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, auto);
-    width: 70%;
-    grid-column-gap: 45px;
-    grid-row-gap: 30px;
-    padding: 50px;
-    margin: auto;
-    
-}
-.Almuerzo img {
-    width:100%;
-    min-width: 50%;
-    max-width: 100%;
-    height: 14rem;
-}
-.break {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, auto);
-    width: 70%;
-    grid-column-gap: 45px;
-    grid-row-gap: 30px;
-    padding: 50px;
-    margin: auto;
-}
-.break img {
-    width:100%;
-    min-width: 50%;
-    max-width: 100%;
-    height: 14rem;
-    border-radius: 10px;
-}
-.bebidas {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, auto);
-    width: 70%;
-    grid-column-gap: 45px;
-    grid-row-gap: 30px;
-    padding: 50px;
-    margin: auto;
-}
-.bebidas img {
-    width:100%;
-    min-width: 50%;
-    max-width: 100%;
-    height: 14rem;
-    border-radius: 10px;
-}
-.contenedor {
-    position: absolute;
-    top: 90%;
-}
 /* logo */
 .logo {
     width: 12rem;
@@ -213,9 +106,12 @@ h1 {
     position: relative;
     transition: 0.2s;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
+
+
 /* Nav */
 nav {
     display: flex;
@@ -244,7 +140,7 @@ nav ul li a,
     text-decoration: none;
     font-family: "roboto";
     z-index: 4;
-/*     margin-top: 25px; */
+    /*     margin-top: 25px; */
     font-size: 15px;
     font-weight: 600;
     text-shadow: 5px 5px 5px black;
@@ -290,9 +186,119 @@ nav ul li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.comida1 {
-    height: 150px;
+
+/* ------------------------------------------------------------- Contenido ------------------------------------------------------------- */
+.contenedor-principal {
+    background-image: url(imagen/john-westrock-9V-hT3P_7KI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3em;
 }
+
+.container3 {
+    position: relative;
+    width: 100%;
+}
+
+.desayuno {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, auto);
+    padding: 50px;
+    width: 70%;
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+    margin: auto;
+}
+
+.almuerzo {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    padding: 50px;
+    width: 70%;
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+    margin: auto;
+}
+
+.break {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    width: 70%;
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+    margin: auto;
+}
+
+.bebidas {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, auto);
+    padding: 50px;
+    width: 70%;
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+    margin: auto;
+}
+
+.desayuno img, 
+.almuerzo img,
+.break img,
+.bebidas img,
+.bebidas img {
+    width: 100%;
+    min-width: 50%;
+    max-width: 100%;
+    height: 14rem;
+    border-radius: 20px;
+}
+
+.descripcion {
+    padding: 20px;
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.548);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-family: "roboto";
+    text-align: center;
+    box-shadow: 0px 0px 15px #f1f1f16e;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "norse";
+    font-size: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    background-color: rgba(12, 69, 87, 0.637);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-radius: 20px;
+}
+
+.container3:hover .overlay {
+    width: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
 .comida1 h3 {
     font-size: 20px;
     background: #f1f1f1;
@@ -304,18 +310,133 @@ nav ul li.dropdown {
     transition: 0.3s ease;
     cursor: pointer;
 }
+
 .comida1 h3:hover {
     background: #000;
     border-radius: 20px;
     color: #f1f1f1;
 }
-p {
-    padding: 20px;
-    color: #f1f1f1;
-    background: rgba(0, 0, 0, 0.548);
-    border-radius: 20px;
-    margin-bottom: 30px;
-    font-family: "roboto";
+
+/*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
+footer {
+    width: 100%
+}
+
+.footer-container {
+    width: 100%;
+    background-image: url(https://imgix.culturacolectiva.com/content/2016/07/mitologia-nordica-guia.jpg?auto=compress&q=40&lossless=1&w=1600&h=645&fit=crop&crop=focalpoint);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff
+}
+
+.footer-menu {
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-menu .footer-columna {
+    width: calc(100% / 3);
+    text-align: justify;
+}
+
+.footer-menu .footer-columna:nth-child(2) {
+    padding: 0 20px;
+}
+
+.footer-menu .footer-columna h3 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-menu .footer-columna span p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 15px;
+
+}
+
+.footer-copy-redes {
+    width: 100%;
+    background: #000;
+    border-top: 3px solid #fff;
+}
+
+.footer-main {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-masters {
+    width: 33%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-redes a img {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40;
+    border-radius: 50%;
+    background: #fff;
+    color: #fff;
+    text-align: center
+}
+
+.footer-celular {
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creditos {
+    color: #ffffff;
     text-align: center;
-    box-shadow: 0px 0px 15px #f1f1f16e;
+}
+
+
+.icon-redes:hover {
+    transform: scale(1.2);
+    transition: 230ms;
+}
+
+.normal {
+    font-family: roboto;
+    color: white;
+
+}
+
+.normal {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    color: rgb(248, 211, 2);
+}
+
+
+h3 {
+    font-family: norse;
 }

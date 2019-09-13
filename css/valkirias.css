@@ -782,3 +782,11 @@ li:hover {
     top: 0px;
     right: 500px;
 }
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
+}

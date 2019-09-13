@@ -698,3 +698,11 @@ body {
     left: 400px;
     z-index: 1;
 }
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
+}

@@ -678,3 +678,11 @@ body {
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
 }
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
+}

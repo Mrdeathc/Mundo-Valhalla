@@ -737,3 +737,11 @@ li:hover {
 h3 {
     font-family: norse;
 }
+
+.column>img {
+    height: 60px;
+}
+
+.mySlides a img {
+    height: 600px;
+}

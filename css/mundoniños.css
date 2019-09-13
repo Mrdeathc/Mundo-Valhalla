@@ -185,14 +185,11 @@ body{
     margin: 10px;
 }
 
-h4 {
-    font-family: "norse";
-}
 .txt-grande {
     font-family: "norse";
-    color: #213d58;
+    color: #0e59a6;
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 1.5vw;
 }
 
 .desc-titulo {
@@ -202,12 +199,15 @@ h4 {
 
 .num {
     font-family: "roboto";
-    font-size: 2vw;
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 

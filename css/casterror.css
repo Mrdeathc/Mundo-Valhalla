@@ -223,16 +223,16 @@ to {
 
 /* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
 .descripcion {
-    padding: 20px;
     border-radius: 20px;
+    padding: 20px;
     grid-column: 1/2;
     grid-row: 1/2;
     position: absolute;
-    top: 650px;
+    top: 720px;
     background-color: #ffffff;
     /* border: solid black; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.473);
- }
+}
 
 .descripcion div ul li {
     list-style-type: none;
@@ -240,23 +240,28 @@ to {
 }
 
 .txt-grande {
+    font-family: "norse";
     color: #0e59a6;
     text-align: center;
     font-size: 1.5vw;
-    font-family: "norse"
- }
- .desc-titulo {
-    font-size: 1.5vw;
-    font-family: "norse";
- }
- .num {
-    font-size: 1rem;
+}
+
+.desc-titulo {
+    font-size: 1.4vw;
     font-family: "roboto";
- }
- .normal1 {
+}
+
+.num {
+    font-family: "roboto";
+    font-size: 1.3rem;
+}
+
+.normal1 {
+    font-family: "roboto";
     text-decoration: none;
-    font-family: "roboto";
- }
+}
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 

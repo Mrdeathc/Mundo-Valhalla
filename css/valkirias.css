@@ -289,9 +289,7 @@ to {
     list-style-type: none;
     margin: 10px;
 }
-h4 {
-    font-family: "norse";
-}
+
 .txt-grande {
     font-family: "norse";
     color: #0e59a6;
@@ -305,13 +303,16 @@ h4 {
 }
 
 .num {
-    font-family: "norse";
-    font-size: 2vw;
+    font-family: "roboto";
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 

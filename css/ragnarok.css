@@ -46,6 +46,7 @@ hr {
     z-index: 4;
     position: relative;
     transition: 0.2s;
+    
 }
 .logo:hover {
     transform: scale(1.1);

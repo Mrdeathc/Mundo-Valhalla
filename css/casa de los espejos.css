@@ -193,13 +193,16 @@ header {
 }
 
 .num {
-    font-family: "norse";
-    font-size: 2vw;
+    font-family: "roboto";
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 

@@ -148,11 +148,12 @@ header {
 }
 
 body{
-    background-image: url(https://s2.best-wallpaper.net/wallpaper/3840x2160/1809/Mount-Rainier-Eunice-Lake-Washington-State-USA-trees-nature_3840x2160.jpg);
+    background-image: url(../imagen/jeffrey-grospe-r195-uoQ_t4-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-position-y: -950px;
 }
 
 .contenedor { 
@@ -197,13 +198,16 @@ body{
 }
 
 .num {
-    font-family: "norse";
-    font-size: 2vw;
+    font-family: "roboto";
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 
@@ -215,12 +219,19 @@ body{
 
 .titulo1 {
     text-align: center;
-    margin: 2em;
+    margin: 1em 2em 1em 2em;
+    font-family: "norse";
+    font-size: 70px;
+    text-shadow: 5px 5px 15px rgb(57, 57, 102);
 }
 
-
 .texto {
+    padding: 20px;
     margin: 2em;
+    font-family: "roboto";
+    color: rgb(255, 255, 255);
+    background: rgba(81, 69, 121, 0.384);
+    border-radius: 20px;
 }
 
 /* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */

@@ -224,17 +224,25 @@ header {
 
 .titulo1 {
     text-align: center;
-    margin: 2em;
+    margin: 1em 2em 1em 2em;
+    font-family: "norse";
+    font-size: 70px;
+    text-shadow: 5px 5px 15px rgb(57, 57, 102);
 }
 
 .texto {
+    padding: 20px;
     margin: 2em;
+    font-family: "roboto";
+    color: rgb(255, 255, 255);
+    background: rgba(81, 69, 121, 0.384);
 }
 
 
 /* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */
 
 .redes {
+    z-index: 5;
     grid-column: 4/5;
     grid-row: 1/2;
 }
@@ -421,11 +429,17 @@ header {
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 
 .titulo2 {
+    margin: 5% 5% 0% 5%;
     text-align: center;
-    /* color: white; */
+    font-size: 70px;
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
 }
 
 .subtitulo {
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -664,9 +678,10 @@ h3 {
 body {
     background-image: url(https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
     /* background: no-repeat; */
-    background-size: 2000px;
-    /* background-size: cover; */
+    background-size: cover;
     color: white;
+    background-attachment: fixed;
+    background-position-y: -450px;
 }
 
 #fixedbutton {
@@ -675,4 +690,11 @@ body {
     top: 550px;
     right: 0px;
     z-index: 99;
+}
+.milmior {
+    position: absolute;
+    top: 25%;
+    width: 1200px;
+    left: 400px;
+    z-index: 1;
 }

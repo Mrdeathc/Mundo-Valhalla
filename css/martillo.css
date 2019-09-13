@@ -43,14 +43,14 @@ hr {
 
 /* logo */
 .logo {
-    width: 10rem;
+    width: 12rem;
     z-index: 4;
+    position: relative;
+    transition: 0.2s;
 }
-
 .logo:hover {
     transform: scale(1.1);
 }
-
 /* Nav */
 nav {
     display: flex;
@@ -58,7 +58,7 @@ nav {
     background-color: transparent;
     align-items: center;
     margin-right: 4%;
-    z-index: 6;
+    z-index: 4;
 }
 
 nav ul {
@@ -67,20 +67,25 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    z-index: 6;
+    z-index: 4;
 }
 
+.dropbtn, .login a{
+    font-weight: 600;
+    text-shadow: 5px 5px 5px black;
+}
 nav ul li a,
 .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 30px 26px;
+    padding: 20px 26px;
     text-decoration: none;
     font-family: "roboto";
-    z-index: 6;
-    /*     margin-top: 25px; */
+    z-index: 4;
+/*     margin-top: 25px; */
     font-size: 15px;
+
 }
 
 .dropdown:hover .dropbtn {
@@ -123,7 +128,6 @@ nav ul li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 /* -------------------------------------------------------------- Imagen ---------------------------------------------------------------- */
 header {
     background-color: #cccccc;
@@ -154,6 +158,8 @@ header {
 
 /* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
 .descripcion {
+    border-radius: 20px;
+    padding: 20px;
     grid-column: 1/2;
     grid-row: 1/2;
     position: absolute;
@@ -161,7 +167,6 @@ header {
     background-color: #ffffff;
     /* border: solid black; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.473);
-
 }
 
 .descripcion div ul li {
@@ -170,22 +175,28 @@ header {
 }
 
 .txt-grande {
+    font-family: "norse";
     color: #0e59a6;
     text-align: center;
     font-size: 1.5vw;
 }
 
 .desc-titulo {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    font-family: "roboto";
 }
 
 .num {
-    font-size: 2vw;
+    font-family: "roboto";
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 

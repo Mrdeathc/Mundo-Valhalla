@@ -164,6 +164,8 @@ header {
 
 /* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
 .descripcion {
+    border-radius: 20px;
+    padding: 20px;
     grid-column: 1/2;
     grid-row: 1/2;
     position: absolute;
@@ -171,7 +173,6 @@ header {
     background-color: #ffffff;
     /* border: solid black; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.473);
-    
 }
 
 .descripcion div ul li {
@@ -180,22 +181,28 @@ header {
 }
 
 .txt-grande {
+    font-family: "norse";
     color: #0e59a6;
     text-align: center;
     font-size: 1.5vw;
 }
 
 .desc-titulo {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    font-family: "roboto";
 }
 
 .num {
-    font-size: 2vw;
+    font-family: "roboto";
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
+
+
 
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 
@@ -207,13 +214,19 @@ header {
 
 .titulo1 {
     text-align: center;
-    margin: 2em;
+    margin: 1em 2em 1em 2em;
+    font-family: "norse";
+    font-size: 70px;
+    text-shadow: 5px 5px 15px rgb(57, 57, 102);
 }
 
 
 .texto {
+    padding: 20px;
     margin: 2em;
-    color: #f1f1f1;
+    font-family: "roboto";
+    color: rgb(255, 255, 255);
+    background: rgba(81, 69, 121, 0.384);
 }
 
 /* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */
@@ -644,12 +657,15 @@ li:hover {
     width: 170px;
     height: 400px;
     z-index: 1;   
+    position: fixed;
     animation-name: traslation;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    overflow: hidden;
     }
     .loki1{
+        overflow: hidden;
         border-radius: 10%;
     position:absolute;
     margin-left: auto;
@@ -659,14 +675,16 @@ li:hover {
     top: 180px;
     width: 170px;
     height: 400px;
-    z-index: 1;   
+    z-index: 3;   
+    position: fixed;
     animation-name: traslation;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     }
     .loki2{
-        border-radius: 10%;
+    overflow: hidden;
+    border-radius: 10%;
     position:absolute;
     margin-left: auto;
     margin-right:auto;
@@ -675,7 +693,8 @@ li:hover {
     top: 200px;
     width: 200px;
     height: 400px;
-    z-index: 1;   
+    z-index: 1; 
+    position: fixed;  
     animation-name: traslation;
     animation-duration: 12s;
     animation-timing-function: linear;

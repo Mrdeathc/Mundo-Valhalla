@@ -9,9 +9,10 @@
     scroll-behavior: smooth;
 }
 body {
-    background: url(../imagen/filip-zrnzevic-PSFfI7vbS3c-unsplash.jpg);
+    background: url(../imagen/hanson-lu-N8BOOpQN4fs-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position-y: -100px;
 }
 hr {
     color: transparent;
@@ -36,17 +37,14 @@ hr {
 /*--------------------------------------------------------- Barra de Navegacion ---------------------------------------------------------*/
 /* logo */
 .logo {
-    width: 10rem;
+    width: 12rem;
     z-index: 4;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    transition: 0.2s;
 }
-
 .logo:hover {
     transform: scale(1.1);
 }
-
 /* Nav */
 nav {
     display: flex;
@@ -54,8 +52,7 @@ nav {
     background-color: transparent;
     align-items: center;
     margin-right: 4%;
-    z-index: 6;
-    height: 175px;
+    z-index: 4;
 }
 
 nav ul {
@@ -64,20 +61,25 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    z-index: 6;
+    z-index: 4;
 }
 
+.dropbtn, .login a{
+    font-weight: 600;
+    text-shadow: 5px 5px 5px black;
+}
 nav ul li a,
 .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 30px 26px;
+    padding: 20px 26px;
     text-decoration: none;
     font-family: "roboto";
-    z-index: 6;
-    /*     margin-top: 25px; */
+    z-index: 4;
+/*     margin-top: 25px; */
     font-size: 15px;
+
 }
 
 .dropdown:hover .dropbtn {
@@ -179,11 +181,12 @@ header {
 }
 
 .num {
-    font-family: "norse";
-    font-size: 2vw;
+    font-family: "roboto";
+    font-size: 1.3rem;
 }
 
 .normal1 {
+    font-family: "roboto";
     text-decoration: none;
 }
 
@@ -223,27 +226,32 @@ header {
 
 .containers {
     width: 100%;
+    max-width: 1150px;
     margin: auto;
     padding: 50px 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+
 }
 
 .tabla {
-    widows: 350px;
+    padding-top: 70px;
+    widows: 320px;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
     cursor: pointer;
-    overflow: hidden;
+/*     overflow: hidden; */
     margin-bottom: 15px;
+    
 }
 
 .titulo {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     background-size: cover;
     padding: 15px 0;
+    
 }
 
 .titulo .fa {
@@ -267,8 +275,9 @@ header {
 .img-paquete {
     /* transform: none; */
     /* background-size: cover; */
-    height: 180px;
+    height: 250px;
     width: 100%;
+    border-radius: 20px;
 }
 
 .precio h3 {
@@ -309,11 +318,56 @@ header {
     background-size: cover;
 }
 
+@media screen and (max-width: 750px) {
+    .tabla {
+        text-align: center;
+        width: 225px;
+    }
+
+    .titulo h2 {
+        font-size: 18px;
+    }
+
+    .precio {
+        padding: 4px 0;
+    }
+
+    .precio h3 {
+        font-size: 20px;
+    }
+
+    .enlace a {
+        margin: 20px 0;
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .enlace a:hover {
+        transform: scale(1.05);
+    }
+
+    .enlace a:hover {
+        transform: scale(1.05);
+    }
+
+    .tabla:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .tabla {
+        text-align: center;
+        width: 300px;
+    }
+}
+
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 300px;
+    height: 400px;
     perspective: 1000px;
+    border-radius: 20px;
 }
 
 .flip-card-inner {
@@ -325,10 +379,12 @@ header {
     transition: transform 1s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    
 }
 
 .flip-card-front,
@@ -342,6 +398,7 @@ header {
 .flip-card-front {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     color: black;
+    
 }
 
 .flip-card-back {
@@ -351,14 +408,19 @@ header {
     font-family: "roboto";
     padding: 10px 0;
 }
-
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 .titulo2 {
-    margin-top: 2em;
+    margin: 5% 5% 0% 5%;
     text-align: center;
+    font-size: 70px;
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
 }
 
 .subtitulo {
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 2em;
 }

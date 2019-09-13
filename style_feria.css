@@ -200,6 +200,7 @@ nav ul li.dropdown {
 }
 
 .contenido {
+
     display: grid;
     width: 100%;
     height: 100%;
@@ -296,10 +297,14 @@ nav ul li.dropdown {
     position: absolute;
 } */
 
-/* footer */
+/*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
 
 footer {
-    width: 100%
+    width: 100%;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 .footer-container {
@@ -311,7 +316,7 @@ footer {
 }
 
 .footer-menu {
-    width: 98%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     padding: 50px 0;
@@ -338,7 +343,6 @@ footer {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 15px;
-
 }
 
 .footer-copy-redes {
@@ -364,7 +368,7 @@ footer {
 }
 
 .footer-redes {
-    width: 30%;
+    width: 33%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -392,7 +396,6 @@ footer {
     text-align: center;
 }
 
-
 .icon-redes:hover {
     transform: scale(1.2);
     transition: 230ms;
@@ -401,7 +404,6 @@ footer {
 .normal {
     font-family: roboto;
     color: white;
-
 }
 
 .normal {
@@ -416,19 +418,24 @@ li:hover {
     color: rgb(248, 211, 2);
 }
 
-
 h3 {
-    font-family: "norse";
+    font-family: norse;
 }
-h1 {
-    margin-top: 5%;
-    font-family: "norse";
-    padding: 20px;
-    font-size: 70px;
-    text-shadow: 5px 5px 10px black;
+
+#fixedbutton {
+    display: none;
+    position: fixed;
+    top: 550px;
+    right: 0px;
+    z-index: 99;
 }
-p {
-    font-family: "roboto";
-    padding: 2px 10px 2px 10px;
-    margin-bottom: 5%;
+
+#text {
+    z-index: 98;
+    position: absolute;
+    top: 280%;
+    left: 48%;
+    font-family: norse;
+    color: white;
+    font-size: larger;
 }

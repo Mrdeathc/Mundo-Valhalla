@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "bebas";
+    src: url(type/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "roboto";
+    src: url(type/Roboto-Light.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(img/trabajo1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+.contenedor {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    grid-template-areas: "header"
+                         "contenido"
+                         "mision"
+                         "footer1"
+}
+.contenedor .header {
+    grid-area: header;
+}
+.contenedor .contenido {
+    grid-area: contenido;
+}
+.contenedor > div {
+    width: 100%;
+}
+/* ---------------------------------------- NAVEGACION ESTILO ------------------------------------------------*/
+ul {
+    overflow: hidden;
+    background: #6aa1c179;
+}
+.menu > li {
+	color: rgba(255, 255, 255, 0.555);
+  	list-style-type: none;
+    float: right;
+    font-weight: 600;
+    padding: 20px;
+}
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    /* padding: 40px 30px; */
+    font-family: "roboto"; 
+    font-size: 15px;
+    padding: 15px;
+}
+.menu li:hover {
+    border-bottom: 3px solid gray;
+    background: rgba(255, 255, 255, 0.555);
+}
+.menu a:hover {
+    color: black;
+}
+.submenu {
+    position: absolute;
+    background-color: #191e29c0;
+    display: none;
+    list-style: none;
+    width: 250px;
+    transition: 1.5s;
+    top: 90px;
+    
+}
+.submenu > li:hover {
+    background: rgba(255, 255, 255, 0.493);
+}
+.menu li:hover .submenu {
+    display: block;
+    opacity: 1;
+}
+/* .submenu2 {
+    position: absolute;
+    background-color: #191e29c0;
+    display: none;
+    list-style: none;
+    width: 250px;
+    transition: 1.5s;
+}
+.submenu2 > li:hover {
+    background: rgba(255, 255, 255, 0.212);
+} */
+.submenu li:hover .submenu2 {
+    display: block;
+}
+
+.logo {
+    top: 15px;
+    position: absolute;
+    width: 200px;
+    left: 30px;
+}
+.titulo1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    font-size: 100px;
+}
+.titulo2 {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 16px;
+    font-weight: 100;
+}
+.contenedor .contenido{
+    background: rgba(34, 71, 83, 0.367);
+}
+.titulo3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    margin-top: 100px; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+#org {
+    background: rgba(48, 110, 120, 0.585);
+    border-radius: 20px;
+    margin-left: 15%;
+}
+.mision {
+    margin: auto;
+    width: 1200px;
+    padding: 50px;
+    margin-left: 8%;
+    opacity: 0.8;
+}
+.footer1 {
+    background: rgb(47, 66, 121);
+}

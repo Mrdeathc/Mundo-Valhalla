@@ -72,12 +72,13 @@ hr {
 /* Nav */
 
 nav {
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
     margin-right: 4%;
-    z-index: 4;
+    
 }
 
 nav ul {
@@ -97,6 +98,7 @@ nav ul {
 
 nav ul li a,
 .dropbtn {
+    z-index: 99;
     display: inline-block;
     color: white;
     text-align: center;
@@ -109,11 +111,13 @@ nav ul li a,
 }
 
 .dropdown:hover .dropbtn {
+    z-index: 99;
     background-color: rgba(165, 165, 165, 0.808);
     border-radius: 10px;
 }
 
 nav ul li.dropdown {
+    z-index: 99;
     display: inline-block;
 }
 
@@ -130,6 +134,7 @@ nav ul li.dropdown {
 }
 
 .dropdown-content a {
+    z-index: 99;
     color: black;
     padding: 14px 16px;
     text-decoration: none;
@@ -142,10 +147,12 @@ nav ul li.dropdown {
 }
 
 .dropdown-content a:hover {
+    z-index: 99;
     background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
+    z-index: 99;
     display: block;
 }
 
@@ -744,4 +751,42 @@ h3 {
 
 .mySlides a img {
     height: 600px;
+}
+/* animacion */
+
+@keyframes traslation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.camilo {
+    overflow: hidden;
+    border-radius: 10%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+    left: 67%;
+    top: 320px;
+    width: 300px;
+    height: 400px;
+    z-index: 3;
+    position: fixed;
+    animation-name: traslation;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }

@@ -13,11 +13,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 90em 1fr 30em 10em;
-    grid-template-areas: "header"
-        "arbol"
-        "tablas1"
-        "slider"
-        "footer"
+    grid-template-areas: "header" "arbol" "tablas1" "slider" "footer"
 }
 
 .contenedor .header {
@@ -27,7 +23,9 @@ body {
     background-attachment: fixed;
 }
 
+
 /* -------------------cierre grids--------------------------------- */
+
 @font-face {
     font-family: "roboto";
     src: url(../type/Roboto-Light.ttf);
@@ -38,7 +36,9 @@ body {
     src: url(../type/Norse-Bold.otf);
 }
 
+
 /*-------------------------- Responsive *------------------------------*/
+
 @media screen and (max-width: 750px) {
     body {
         margin: auto;
@@ -50,38 +50,33 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
     nav ul {
         width: 100%;
         justify-content: space-evenly;
     }
-
     .contenedor2 {
         flex-direction: column;
     }
-
     .slider {
         width: 100%;
     }
-
     .articulo {
         width: 100%;
     }
-
     .montana2 {
         top: 37%
     }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
     .montana1 {
         top: 37%
     }
-
 }
 
+
 /* logo */
+
 .logo {
     width: 12rem;
     z-index: 4;
@@ -93,7 +88,9 @@ body {
     transform: scale(1.1);
 }
 
+
 /* ---------------------------Nav---------------------------------- */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -137,6 +134,7 @@ nav ul li a,
 }
 
 nav ul li.dropdown {
+    z-index: 100;
     display: inline-block;
 }
 
@@ -170,15 +168,21 @@ nav ul li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    position: absolute;
+    z-index: 100;
 }
 
+
 /* Arbol */
+
 .arbol>img {
     width: 100%;
     height: auto;
 }
 
+
 /* headerC */
+
 .montana1 {
     position: relative;
     width: 100%;
@@ -228,7 +232,6 @@ nav ul li.dropdown {
     from {
         left: 0;
     }
-
     to {
         left: 100%;
     }
@@ -238,7 +241,6 @@ nav ul li.dropdown {
     from {
         right: 0;
     }
-
     to {
         right: 100%;
     }
@@ -288,7 +290,9 @@ nav ul li.dropdown {
     z-index: 5;
 }
 
+
 /* ------------------------Seccion Arbol------------------------------ */
+
 .contenedor .arbol {
     background-image: url(../imagen/arbol.png);
     grid-area: arbol;
@@ -392,7 +396,9 @@ h5 {
     font-weight: 600;
 }
 
+
 /* ------------------------Seccion tablas------------------------------ */
+
 .contenedor .tablas1 {
     background-image: url(../imagen/FONDOT.jpg);
     background-attachment: fixed;
@@ -407,8 +413,6 @@ h5 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
-
 }
 
 .tabla {
@@ -419,14 +423,12 @@ h5 {
     cursor: pointer;
     /*     overflow: hidden; */
     margin-bottom: 15px;
-
 }
 
 .titulo {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     background-size: cover;
     padding: 15px 0;
-
 }
 
 .titulo .fa {
@@ -438,7 +440,6 @@ h5 {
     color: #fff;
     font-family: "norse";
     font-size: 32px;
-
 }
 
 .precio {
@@ -465,7 +466,6 @@ h5 {
     font-size: 50px;
     margin-left: 5px;
 }
-
 
 .enlace a {
     font-family: "norse";
@@ -498,33 +498,26 @@ h5 {
         text-align: center;
         width: 225px;
     }
-
     .titulo h2 {
         font-size: 18px;
     }
-
     .precio {
         padding: 4px 0;
     }
-
     .precio h3 {
         font-size: 20px;
     }
-
     .enlace a {
         margin: 20px 0;
         padding: 8px 20px;
         font-size: 18px;
     }
-
     .enlace a:hover {
         transform: scale(1.05);
     }
-
     .enlace a:hover {
         transform: scale(1.05);
     }
-
     .tabla:hover {
         transform: none;
     }
@@ -554,12 +547,10 @@ h5 {
     transition: transform 1s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-
 }
 
 .flip-card-front,
@@ -573,7 +564,6 @@ h5 {
 .flip-card-front {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     color: black;
-
 }
 
 .flip-card-back {
@@ -584,7 +574,9 @@ h5 {
     padding: 10px 0;
 }
 
+
 /*--------------------------- Slider--------------------------------- */
+
 .slider {
     width: 100%;
     overflow: hidden;
@@ -610,31 +602,24 @@ h5 {
     0% {
         margin-left: 0;
     }
-
     20% {
         margin-left: 0;
     }
-
     25% {
         margin-left: -100%;
     }
-
     45% {
         margin-left: -100%;
     }
-
     50% {
         margin-left: -200%;
     }
-
     70% {
         margin-left: -200%;
     }
-
     75% {
         margin-left: -300%;
     }
-
     100% {
         margin-left: -300%;
     }
@@ -645,7 +630,9 @@ h5 {
     background: #000;
 }
 
+
 /*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
+
 footer {
     width: 100%;
 }

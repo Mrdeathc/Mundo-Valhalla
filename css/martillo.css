@@ -1,4 +1,5 @@
 /*---------------------------------------------------------- Variables globales ----------------------------------------------------------*/
+
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +16,7 @@ hr {
     margin: auto;
 }
 
+
 /* -------------------------------------------------------------- Fuentes ---------------------------------------------------------------- */
 
 @font-face {
@@ -27,31 +29,39 @@ hr {
     src: url(../type/Norse-Bold.otf);
 }
 
+
 /*------------------------------------------------------------ Media Queries ------------------------------------------------------------*/
+
 @media only screen and (max-width: 768px) {
     nav {
         width: 100%;
         flex-direction: column;
     }
-
     nav ul {
         width: 100%;
     }
 }
 
+
 /*--------------------------------------------------------- Barra de Navegacion ---------------------------------------------------------*/
 
+
 /* logo */
+
 .logo {
     width: 12rem;
     z-index: 4;
     position: relative;
     transition: 0.2s;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
+
+
 /* Nav */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -70,10 +80,12 @@ nav ul {
     z-index: 4;
 }
 
-.dropbtn, .login a{
+.dropbtn,
+.login a {
     font-weight: 600;
     text-shadow: 5px 5px 5px black;
 }
+
 nav ul li a,
 .dropbtn {
     display: inline-block;
@@ -83,9 +95,8 @@ nav ul li a,
     text-decoration: none;
     font-family: "roboto";
     z-index: 4;
-/*     margin-top: 25px; */
+    /*     margin-top: 25px; */
     font-size: 15px;
-
 }
 
 .dropdown:hover .dropbtn {
@@ -128,7 +139,10 @@ nav ul li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
 /* -------------------------------------------------------------- Imagen ---------------------------------------------------------------- */
+
 header {
     background-color: #cccccc;
     height: 770px;
@@ -137,7 +151,9 @@ header {
     background-size: cover;
 }
 
+
 /* -------------------------------------------------------- Contenido principal --------------------------------------------------------- */
+
 #fixedbutton {
     display: none;
     position: fixed;
@@ -153,10 +169,11 @@ header {
     grid-gap: 20px 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-
 }
 
+
 /* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
+
 .descripcion {
     border-radius: 20px;
     padding: 20px;
@@ -197,7 +214,6 @@ header {
 }
 
 
-
 /* ------------------------------------------------------------ Informacion -------------------------------------------------------------- */
 
 .info {
@@ -211,18 +227,27 @@ header {
     margin: 2em;
 }
 
-
 .texto {
     margin: 2em;
 }
 
+
 /* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */
+
 .redes {
     grid-column: 4/5;
     grid-row: 1/2;
 }
 
+
 /* ---------------------------------------------------- Paquetes  ------------------------------------------------------ */
+
+.contenedor .tablas1 {
+    background-image: url(../imagen/FONDOT.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .containers {
     width: 100%;
     max-width: 1150px;
@@ -234,12 +259,12 @@ header {
 }
 
 .tabla {
-    widows: 350px;
+    padding-top: 70px;
+    widows: 320px;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
     cursor: pointer;
-    overflow: hidden;
+    /*     overflow: hidden; */
     margin-bottom: 15px;
 }
 
@@ -258,7 +283,6 @@ header {
     color: #fff;
     font-family: "norse";
     font-size: 32px;
-
 }
 
 .precio {
@@ -270,8 +294,9 @@ header {
 .img-paquete {
     /* transform: none; */
     /* background-size: cover; */
-    height: 180px;
+    height: 250px;
     width: 100%;
+    border-radius: 20px;
 }
 
 .precio h3 {
@@ -284,7 +309,6 @@ header {
     font-size: 50px;
     margin-left: 5px;
 }
-
 
 .enlace a {
     font-family: "norse";
@@ -317,33 +341,26 @@ header {
         text-align: center;
         width: 225px;
     }
-
     .titulo h2 {
         font-size: 18px;
     }
-
     .precio {
         padding: 4px 0;
     }
-
     .precio h3 {
         font-size: 20px;
     }
-
     .enlace a {
         margin: 20px 0;
         padding: 8px 20px;
         font-size: 18px;
     }
-
     .enlace a:hover {
         transform: scale(1.05);
     }
-
     .enlace a:hover {
         transform: scale(1.05);
     }
-
     .tabla:hover {
         transform: none;
     }
@@ -359,8 +376,9 @@ header {
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 300px;
+    height: 400px;
     perspective: 1000px;
+    border-radius: 20px;
 }
 
 .flip-card-inner {
@@ -399,7 +417,9 @@ header {
     padding: 10px 0;
 }
 
+
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
+
 .titulo2 {
     text-align: center;
     /* color: white; */
@@ -410,24 +430,32 @@ header {
     margin-bottom: 2em;
 }
 
+
 /* Position the image container (needed to position the left and right arrows) */
+
 .container {
     position: relative;
     width: 80%;
     margin: auto;
 }
 
+
 /* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
+
 /* Add a pointer when hovering over the thumbnail images */
+
 .cursor {
     cursor: pointer;
 }
 
+
 /* Next & previous buttons */
+
 .prev,
 .next {
     cursor: pointer;
@@ -444,19 +472,25 @@ header {
     -webkit-user-select: none;
 }
 
+
 /* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* Number text (1/3 etc) */
+
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -465,7 +499,9 @@ header {
     top: 0;
 }
 
+
 /* Container for image text */
+
 .caption-container {
     text-align: center;
     background-color: #222;
@@ -479,13 +515,17 @@ header {
     clear: both;
 }
 
+
 /* Six columns side by side */
+
 .column {
     float: left;
     width: 11.11%;
 }
 
+
 /* Add a transparency effect for thumnbail images */
+
 .demo {
     opacity: 0.6;
 }
@@ -500,7 +540,9 @@ header {
     text-align: center;
 }
 
+
 /*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
+
 footer {
     width: 100%
 }
@@ -540,7 +582,6 @@ footer {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 15px;
-
 }
 
 .footer-copy-redes {
@@ -594,7 +635,6 @@ footer {
     text-align: center;
 }
 
-
 .icon-redes:hover {
     transform: scale(1.2);
     transition: 230ms;
@@ -603,7 +643,6 @@ footer {
 .normal {
     font-family: roboto;
     color: white;
-
 }
 
 .normal {
@@ -618,11 +657,11 @@ li:hover {
     color: rgb(248, 211, 2);
 }
 
-
 h3 {
     font-family: norse;
 }
-body{
+
+body {
     background-image: url(https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
     /* background: no-repeat; */
     background-size: 2000px;

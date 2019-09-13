@@ -229,6 +229,197 @@ body{
     grid-row: 1/2;
 }
 
+/* ---------------------------------------------------- Paquetes  ------------------------------------------------------ */
+.contenedor .tablas1 {
+    background-image: url(../imagen/FONDOT.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.containers {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+}
+
+.tabla {
+    padding-top: 70px;
+    widows: 320px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+/*     overflow: hidden; */
+    margin-bottom: 15px;
+    
+}
+
+.titulo {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    background-size: cover;
+    padding: 15px 0;
+    
+}
+
+.titulo .fa {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.titulo h2 {
+    color: #fff;
+    font-family: "norse";
+    font-size: 32px;
+
+}
+
+.precio {
+    padding: 10px 0;
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    background-size: cover;
+}
+
+.img-paquete {
+    /* transform: none; */
+    /* background-size: cover; */
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.precio h3 {
+    font-family: "norse";
+    font-size: 30px;
+    color: #fff;
+}
+
+.precio h3 span {
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+
+.enlace a {
+    font-family: "norse";
+    display: inline-block;
+    text-decoration: none;
+    background: #000;
+    background-size: cover;
+    color: #fff;
+    margin: 40px 0;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: 21px;
+    transition: .3s;
+}
+
+.enlace a:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    background-color: #fff;
+    color: #000;
+}
+
+.enlace {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .tabla {
+        text-align: center;
+        width: 225px;
+    }
+
+    .titulo h2 {
+        font-size: 18px;
+    }
+
+    .precio {
+        padding: 4px 0;
+    }
+
+    .precio h3 {
+        font-size: 20px;
+    }
+
+    .enlace a {
+        margin: 20px 0;
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .enlace a:hover {
+        transform: scale(1.05);
+    }
+
+    .enlace a:hover {
+        transform: scale(1.05);
+    }
+
+    .tabla:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .tabla {
+        text-align: center;
+        width: 300px;
+    }
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 400px;
+    perspective: 1000px;
+    border-radius: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "norse";
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    color: black;
+    
+}
+
+.flip-card-back {
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "roboto";
+    padding: 10px 0;
+}
+
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 .titulo2 {
     text-align: center;

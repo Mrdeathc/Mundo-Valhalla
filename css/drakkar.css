@@ -238,6 +238,11 @@ header {
 }
 
 /* ---------------------------------------------------- Paquetes  ------------------------------------------------------ */
+.contenedor .tablas1 {
+    background-image: url(../imagen/FONDOT.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
 .containers {
     width: 100%;
     max-width: 1150px;
@@ -246,22 +251,26 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+
 }
 
 .tabla {
-    widows: 350px;
+    padding-top: 70px;
+    widows: 320px;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
     cursor: pointer;
-    overflow: hidden;
+/*     overflow: hidden; */
     margin-bottom: 15px;
+    
 }
 
 .titulo {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     background-size: cover;
     padding: 15px 0;
+    
 }
 
 .titulo .fa {
@@ -285,8 +294,9 @@ header {
 .img-paquete {
     /* transform: none; */
     /* background-size: cover; */
-    height: 180px;
+    height: 250px;
     width: 100%;
+    border-radius: 20px;
 }
 
 .precio h3 {
@@ -374,8 +384,9 @@ header {
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 300px;
+    height: 400px;
     perspective: 1000px;
+    border-radius: 20px;
 }
 
 .flip-card-inner {
@@ -387,10 +398,12 @@ header {
     transition: transform 1s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    
 }
 
 .flip-card-front,
@@ -404,6 +417,7 @@ header {
 .flip-card-front {
     background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-madera-textured-oscuro-grunge-superficie-vieja-textura-madera-marron_7182-333.jpg?size=626&ext=jpg);
     color: black;
+    
 }
 
 .flip-card-back {
@@ -413,7 +427,6 @@ header {
     font-family: "roboto";
     padding: 10px 0;
 }
-
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 .titulo2 {
     text-align: center;

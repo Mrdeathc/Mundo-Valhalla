@@ -18,7 +18,9 @@
 }
 
 body{
-    background: cadetblue;
+    background: url(../imagen/christine-roy-ir5MHI6rPg0-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* logo */
@@ -44,6 +46,7 @@ nav ul {
     overflow: hidden;
     display: flex;
     z-index: 6;
+    font-weight: 600;
 }
 
 nav ul li a,

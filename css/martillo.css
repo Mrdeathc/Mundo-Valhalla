@@ -225,6 +225,7 @@ header {
 
 /* ---------------------------------------------------- Redes Sociales  ------------------------------------------------------ */
 .redes {
+    z-index: 5;
     grid-column: 4/5;
     grid-row: 1/2;
 }
@@ -408,11 +409,17 @@ header {
 
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 .titulo2 {
+    margin: 5% 5% 0% 5%;
     text-align: center;
-    /* color: white; */
+    font-size: 70px;
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
 }
 
 .subtitulo {
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -644,4 +651,11 @@ body{
     top: 550px;
     right: 0px;
     z-index: 99;
+}
+.milmior {
+    position: absolute;
+    top: 25%;
+    width: 1200px;
+    left: 400px;
+    z-index: 1;
 }

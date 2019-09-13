@@ -522,7 +522,6 @@ header {
 }
 
 /*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
-
 footer {
     width: 100%
 }
@@ -547,14 +546,10 @@ footer {
 .footer-menu .footer-columna {
     width: calc(100% / 3);
     text-align: justify;
-
-
 }
 
 .footer-menu .footer-columna:nth-child(2) {
     padding: 0 20px;
-
-
 }
 
 .footer-menu .footer-columna h3 {
@@ -576,30 +571,29 @@ footer {
     border-top: 3px solid #fff;
 }
 
-.main-copy-redes {
-    width: 98%;
-    max-width: 1000px;
-    padding: 15px 0;
-    margin: auto;
+.footer-main {
+    width: 100%;
+    padding: 15px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-copy-redes .footer-copy {
-    width: 70%;
-    color: #fff
+.footer-masters {
+    width: 33%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-copy-redes .footer-redes {
+.footer-redes {
     width: 30%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-evenly;
 }
 
-.main-copy-redes .footer-redes a img {
+.footer-redes a img {
     display: inline-block;
     text-decoration: none;
     width: 40px;
@@ -611,68 +605,19 @@ footer {
     text-align: center
 }
 
-@media screen and (max-width: 750px) {
-    .info-main {
-        padding: 30px 100px;
-    }
-
-    .footer-menu .footer-columna {
-        padding: 0 10px;
-
-    }
-
-    .footer-menu .footer-columna h3 {
-        font-size: 28px;
-    }
-
-    .footer-menu .footer-columna p {
-        font-size: 14px;
-    }
+.footer-celular {
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
 }
 
-@media screen and (max-width: 640px) {
-    .info-main {
-        padding: 30px 30px;
-    }
-
-    .info-main h3 {
-        font-size: 30px;
-    }
-
-    .footer-menu {
-        padding: 10px 0;
-    }
-
-    .footer-menu .footer-columna {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .footer-menu .footer-columna h3 {
-        margin-bottom: 5px;
-
-    }
-
-    .footer-menu .footer-columna span {
-        display: block;
-    }
-
-    .main-copy-redes .footer-copy {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .main-copy-redes .footer-redes {
-        width: 100%;
-    }
-
-
+.creditos {
+    color: #ffffff;
+    text-align: center;
 }
 
-.putos:hover {
 
+.icon-redes:hover {
     transform: scale(1.2);
     transition: 230ms;
 }
@@ -691,15 +636,11 @@ li {
     list-style: none;
 }
 
-
-
 li:hover {
-
     color: rgb(248, 211, 2);
 }
 
-
-h3 {
+.fuente-titulos {
     font-family: norse;
 }
 .barco1 {

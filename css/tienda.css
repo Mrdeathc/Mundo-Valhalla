@@ -238,17 +238,14 @@ h1 {
 /* -------------------------------- MENU ----------------------------- */
 /* logo */
 .logo {
-    width: 10rem;
+    width: 12rem;
     z-index: 4;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    transition: 0.2s;
 }
-
 .logo:hover {
     transform: scale(1.1);
 }
-
 /* Nav */
 nav {
     display: flex;
@@ -256,8 +253,7 @@ nav {
     background-color: transparent;
     align-items: center;
     margin-right: 4%;
-    z-index: 6;
-    height: 175px;
+    z-index: 4;
 }
 
 nav ul {
@@ -266,20 +262,25 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    z-index: 6;
+    z-index: 4;
 }
 
+.dropbtn, .login a{
+    font-weight: 600;
+    text-shadow: 5px 5px 5px black;
+}
 nav ul li a,
 .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 30px 26px;
+    padding: 20px 26px;
     text-decoration: none;
     font-family: "roboto";
-    z-index: 6;
-    /*     margin-top: 25px; */
+    z-index: 4;
+/*     margin-top: 25px; */
     font-size: 15px;
+
 }
 
 .dropdown:hover .dropbtn {

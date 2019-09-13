@@ -53,20 +53,22 @@ hr {
 /*--------------------------------------------------------- Barra de Navegacion ---------------------------------------------------------*/
 /* logo */
 .logo {
-    width: 10rem;
-    z-index: 99;
-    position: absolute;
-    top: 0;
+    width: 12rem;
+    z-index: 4;
+    position: relative;
+    transition: 0.2s;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 /* Nav */
 nav {
-    height: 150px;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
     margin-right: 4%;
-    z-index: 6;
+    z-index: 4;
 }
 
 nav ul {
@@ -75,20 +77,25 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    z-index: 6;
+    z-index: 4;
 }
 
+.dropbtn, .login a{
+    font-weight: 600;
+    text-shadow: 5px 5px 5px black;
+}
 nav ul li a,
 .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 30px 26px;
+    padding: 20px 26px;
     text-decoration: none;
     font-family: "roboto";
-    z-index: 6;
+    z-index: 4;
 /*     margin-top: 25px; */
     font-size: 15px;
+
 }
 
 .dropdown:hover .dropbtn {
@@ -192,6 +199,8 @@ to {
     position: absolute;
     top: 13px;
     position: fixed;
+    z-index: 3;
+    filter: brightness(0.5)
 
 }
 /* -------------------------------------------------------- Contenido principal --------------------------------------------------------- */
@@ -679,13 +688,26 @@ h3 {
     padding: 10px 0;
 }
 .rayo {
-/*     filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));  */
+    filter: drop-shadow(5px 5px 10px rgb(255, 254, 254)); 
     font-size: 500px;
     position: absolute;
-    top: 20%;
-    left: 80%;
+    top: -40%;
+    left: 10%;
     filter: brightness(2.9);
-    filter: blur(15px);
-    box-shadow: 0 0 20px rgb(144, 226, 247);
-    transform: scale(500px)
+    filter: blur(25px);
+/*     box-shadow: 0 0 20px rgb(144, 226, 247); */
+    width: 1500px;
+    z-index: 1;
+}
+.rayo2 {
+    filter: drop-shadow(5px 5px 10px rgb(255, 254, 254)); 
+    font-size: 500px;
+    position: absolute;
+    top: -40%;
+    left: 30%;
+    filter: brightness(2.9);
+    filter: blur(55px);
+/*     box-shadow: 0 0 20px rgb(144, 226, 247); */
+    width: 2500px;
+    z-index: 1;
 }

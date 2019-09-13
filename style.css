@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -457,4 +458,12 @@ li:hover {
 
 h3 {
     font-family: norse;
+}
+
+#fixedbutton {
+    display: none;
+    position: fixed;
+    top: 550px;
+    right: 0px;
+    z-index: 99;
 }

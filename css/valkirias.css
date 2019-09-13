@@ -533,12 +533,17 @@ to {
 
 /* ------------------------------------------------------------ Slider ---------------------------------------------------------------- */
 .titulo2 {
+    margin: 5% 5% 0% 5%;
     text-align: center;
+    font-size: 70px;
     font-family: "norse";
-    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
 }
 
 .subtitulo {
+    font-family: "norse";
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -764,4 +769,16 @@ li:hover {
 } */
 .video {
     border-radius: 20px;
+}
+.pulp {
+    position: absolute;
+    top: 170px;
+    right: 650px;
+    position: fixed
+}
+.pulpo {
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    right: 500px;
 }

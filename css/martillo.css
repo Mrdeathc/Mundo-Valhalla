@@ -7,6 +7,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 hr {
@@ -68,7 +69,7 @@ nav {
     background-color: transparent;
     align-items: center;
     margin-right: 4%;
-    z-index: 4;
+    z-index: 99;
 }
 
 nav ul {
@@ -77,13 +78,14 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    z-index: 4;
+    z-index: 99;
 }
 
 .dropbtn,
 .login a {
     font-weight: 600;
     text-shadow: 5px 5px 5px black;
+    z-index: 99;
 }
 
 nav ul li a,
@@ -94,7 +96,7 @@ nav ul li a,
     padding: 20px 26px;
     text-decoration: none;
     font-family: "roboto";
-    z-index: 4;
+    z-index: 99;
     /*     margin-top: 25px; */
     font-size: 15px;
 }
@@ -102,10 +104,12 @@ nav ul li a,
 .dropdown:hover .dropbtn {
     background-color: rgba(165, 165, 165, 0.808);
     border-radius: 10px;
+    z-index: 99;
 }
 
 nav ul li.dropdown {
     display: inline-block;
+    z-index: 99;
 }
 
 .dropdown-content {
@@ -118,6 +122,7 @@ nav ul li.dropdown {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 20px;
+    z-index: 99;
 }
 
 .dropdown-content a {
@@ -130,14 +135,17 @@ nav ul li.dropdown {
     font-size: 14px;
     padding: 15px;
     border-radius: 20px;
+    z-index: 99;
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+    z-index: 99;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 99;
 }
 
 
@@ -175,6 +183,7 @@ header {
 /* ---------------------------------------------------------- Requerimientos ------------------------------------------------------------ */
 
 .descripcion {
+    z-index: 99;
     border-radius: 20px;
     padding: 20px;
     grid-column: 1/2;
@@ -676,7 +685,8 @@ h3 {
 }
 
 body {
-    background-image: url(https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
+    overflow-x: hidden;
+    background-image: url(../imagen/thor.jpg);
     /* background: no-repeat; */
     background-size: cover;
     color: white;
@@ -694,9 +704,10 @@ body {
 .milmior {
     position: absolute;
     top: 25%;
-    width: 1200px;
-    left: 400px;
+    width: 800px;
+    left: 100px;
     z-index: 1;
+    transform: rotateY(180deg)
 }
 
 .column>img {

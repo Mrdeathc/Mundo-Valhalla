@@ -13,7 +13,7 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 
-    if (document.body.scrollTop > 1814 || document.documentElement.scrollTop > 2400) {
+    if (document.body.scrollTop > 1814 || document.documentElement.scrollTop > 3000) {
         mybutton.style.display = "none";
     }
 }
